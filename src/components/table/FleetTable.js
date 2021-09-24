@@ -1,8 +1,7 @@
 import React from 'react';
+import { AiFillDelete, AiFillEdit } from 'react-icons/ai';
 import { Table, Tbody, Td, Th, Thead, Tr } from 'react-super-responsive-table';
 import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css';
-import { ReactComponent as Delete } from '../../assets/delete.svg';
-import { ReactComponent as Edit } from '../../assets/edit.svg';
 const FleetTable = ({ data, headerData }) => {
   return (
     <Table>
@@ -35,9 +34,9 @@ const FleetTable = ({ data, headerData }) => {
                 <button className='button'>Define</button>
               </Td>
               <Td>
-                <Edit style={{ cursor: 'pointer' }} />
+                <AiFillEdit className='table__button--action' />
                 <span />
-                <Delete style={{ cursor: 'pointer' }} />
+                <AiFillDelete className='table__button--action' />
               </Td>
             </Tr>
           );

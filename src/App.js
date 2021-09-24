@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { AiFillMail, AiOutlinePoweroff } from 'react-icons/ai';
 import { IoMdNotifications } from 'react-icons/io';
-import logo from './assets/images/logo.svg';
+import logo from './assets/images/header_ramp_white.png';
 import Dashboard from './components/dashboard/Dashboard';
 
 function App() {

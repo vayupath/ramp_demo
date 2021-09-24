@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AiFillMail } from 'react-icons/ai';
+import { IoIosAddCircleOutline } from 'react-icons/io';
 import Paginator from '../paginator/Paginator';
 import SearchInput from '../search-input/SearchInput';
 import { FleetTable } from '../table/FleetTable';
@@ -50,19 +50,24 @@ const Dashboard = (props) => {
               <a href={() => {}}>Home</a>
             </li>
             <li>
-              <a href={() => {}}>Pictures</a>
+              <a href={() => {}}>Organization</a>
             </li>
             <li>
-              <a href={() => {}}>Summer 15</a>
+              <li>manage Fleet</li>
             </li>
-            <li>Italy</li>
           </ul>
           <SearchInput></SearchInput>
         </div>
-        <div className='nav__list nav__list--secondary'>
+        <div className='nav__list nav__list--secondary row-flex'>
           <button className='button button--icon'>
             {' '}
-            <AiFillMail></AiFillMail>Add{' '}
+            <IoIosAddCircleOutline className='nav__icon'></IoIosAddCircleOutline>
+            Add New
+          </button>
+          <button className='button button--icon'>
+            {' '}
+            <IoIosAddCircleOutline className='nav__icon'></IoIosAddCircleOutline>
+            Bulk Vehicle Entry
           </button>
         </div>
       </div>
