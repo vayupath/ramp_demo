@@ -14,11 +14,11 @@ const headerData = [
   'Ideal Value',
   'Action',
 ];
-const data = {
-  sl: Math.floor(Math.random() * 39),
-  vehicle_no: '1234',
-  vehicle_name: 'siddharth',
-};
+// const data = {
+//   sl: Math.floor(Math.random() * 39),
+//   vehicle_no: '1234',
+//   vehicle_name: 'siddharth',
+// };
 
 const myArr = new Array(100).fill().map((e, i) => {
   return {
@@ -47,13 +47,13 @@ const Dashboard = (props) => {
         <div className='nav__list nav__list--primary'>
           <ul class='breadcrumb'>
             <li>
-              <a href='#'>Home</a>
+              <a href={() => {}}>Home</a>
             </li>
             <li>
-              <a href='#'>Pictures</a>
+              <a href={() => {}}>Pictures</a>
             </li>
             <li>
-              <a href='#'>Summer 15</a>
+              <a href={() => {}}>Summer 15</a>
             </li>
             <li>Italy</li>
           </ul>

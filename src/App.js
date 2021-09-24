@@ -19,24 +19,24 @@ function App() {
           >
             <span class='hamburger'></span>
           </button>
-          <a class='logo' href='#'>
+          <a class='logo' href={() => {}}>
             <img src={logo} alt='conquering responsive layouts'></img>
           </a>
           <nav class={`nav ${open ? 'nav--visible' : ''}`}>
             <ul class='nav__list nav__list--secondary'>
               <li class='nav__item'>
-                <a href='#' class='nav__link'>
+                <a href={() => {}} class='nav__link'>
                   <AiFillMail></AiFillMail>
                 </a>
               </li>
               <li class='nav__item'>
-                <a href='#' class='nav__link'>
+                <a href={() => {}} class='nav__link'>
                   <IoMdNotifications></IoMdNotifications>
                 </a>
               </li>
               <li class='nav__item nav__item--profile'>
                 <span className='nav__profile'>Welcome Ritesh</span>
-                <a href='#' class='nav__link'>
+                <a href={() => {}} class='nav__link'>
                   <AiOutlinePoweroff></AiOutlinePoweroff>
                 </a>
               </li>
